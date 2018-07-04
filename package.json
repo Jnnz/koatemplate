@@ -1,0 +1,32 @@
+{
+    "name": "koaservice",
+    "version": "1.0.0",
+    "description": "REST service",
+    "main": "server.js",
+    "scripts": {
+        "test": "cls && npm run test:integration",
+        "test:integration": "set NODE_ENV=test&&jest --verbose",
+        "coverage": "cls && jest --coverage --silent",
+        "start": "cls && nodemon server.js"
+    },
+    "author": "Johann Perozo",
+    "license": "ISC",
+    "dependencies": {
+        "app-root-path": "^2.1.0",
+        "knex": "^0.14.6",
+        "koa": "^2.5.1",
+        "koa-json": "^2.0.2",
+        "koa-logger": "^3.2.0",
+        "koa-response-time": "^2.0.0",
+        "koa-router": "^7.4.0",
+        "pg": "^7.4.3"
+    },
+    "devDependencies": {
+        "@types/jest": "^23.1.4",
+        "jest": "^23.2.0",
+        "jest-junit": "^5.1.0",
+        "mocha": "^5.2.0",
+        "should": "^13.2.1",
+        "supertest": "^3.1.0"
+    }
+}
